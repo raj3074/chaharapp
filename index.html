@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chahar-App | Ramesh Chahar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            background-color: #374151;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #4b5563;
+        }
+
+        .news-bar {
+            background-color: #facc15;
+            color: #111827;
+            padding: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .news-bar span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-left 15s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(to right, #3b82f6, #60a5fa);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .tabs-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            flex-wrap: wrap;
+            background-color: white;
+        }
+
+        .tab {
+            background-color: #e5e7eb;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .tab:hover {
+            transform: translateY(-5px);
+            background-color: #d1d5db;
+        }
+
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Chahar-App</h1>
+        <p>by Ramesh Chahar - DevOps Engineer</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Contact</a>
+        <a href="#">Dashboard</a>
+    </nav>
+
+    <div class="news-bar">
+        <span>🚀 New Release: Version 2.0 of Chahar-App is now live! | 🔧 DevOps Workshop by Ramesh on July 10th | 🌐 Stay tuned for cloud-native updates!</span>
+    </div>
+
+    <div class="hero">
+        <h1>Empowering DevOps, One App at a Time</h1>
+        <p>Chahar-App simplifies your cloud-native journey. Built by Ramesh Chahar, a passionate DevOps Engineer.</p>
+    </div>
+
+    <section class="tabs-section">
+        <div class="tab">
+            <h3>CI/CD Pipelines</h3>
+            <p>Automate and streamline your deployments with industry best practices.</p>
+        </div>
+        <div class="tab">
+            <h3>Monitoring</h3>
+            <p>Get real-time insights into app performance and infrastructure health.</p>
+        </div>
+        <div class="tab">
+            <h3>Security</h3>
+            <p>Built-in security features to protect your app and data.</p>
+        </div>
+        <div class="tab">
+            <h3>Cloud Integration</h3>
+            <p>Seamlessly integrate with Azure, AWS, GCP, and other cloud providers.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Chahar-App | Developed by Ramesh Chahar
+    </footer>
+
+</body>
+</html>
